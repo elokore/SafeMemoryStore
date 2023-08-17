@@ -1,0 +1,16 @@
+{
+  "name": "SafeMemoryStore",
+  "tree": {
+    "$className": "DataModel",
+
+    "ServerScriptService": {
+      "SafeMemoryStore": {
+        "$path": "src",
+        "Packages": {
+          "$className": "Folder",
+          "$path": "Packages"
+        }
+      }
+    }
+  }
+}

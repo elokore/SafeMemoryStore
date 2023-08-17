@@ -1,0 +1,15 @@
+{
+    "[lua]": {
+        "editor.defaultFormatter": "JohnnyMorganz.stylua",
+        "editor.formatOnSave": true
+    },
+    "workbench.tree.indent": 30,
+    "robloxLsp.diagnostics.disable": [
+        "incorrect-call-arguments",
+        "redundant-parameter",
+        "count-down-loop",
+        "undefined-doc-name",
+        "undefined-global"
+    ],
+    "editor.tabSize": 4,
+}

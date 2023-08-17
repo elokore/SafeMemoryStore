@@ -1,0 +1,10 @@
+# Project place file
+/SafeMemoryStore.rbxlx
+
+# Wally
+wally.lock
+Packages
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
