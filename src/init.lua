@@ -8,7 +8,7 @@
 local MemoryStoreService = game:GetService("MemoryStoreService")
 
 -- < Imports > --
-local Promise = require(script.Packages.Promise)
+local Promise = require(script.Parent.Promise)
 
 -- < Types > --
 local SafeSortedMap: SafeSortedMap = {}

@@ -1,9 +1,8 @@
 [package]
 name = "westmkk1/safe-memory-store"
-version = "0.1.0"
-registry = "https://github.com/UpliftGames/wally-index"
-realm = "server"
-private = true
+version = "0.1.2"
+registry = "https://github.com/dunngames/wally-index"
+realm = "shared"
 
 [dependencies]
 Promise = "evaera/promise@^4.0.0"
