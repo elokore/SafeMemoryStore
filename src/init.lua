@@ -11,8 +11,8 @@ local MemoryStoreService = game:GetService("MemoryStoreService")
 local Promise = require(script.Parent.Promise)
 
 -- < Types > --
-local SafeSortedMap: SafeSortedMap = {}
-local SafeMemoryQueue: SafeMemoryQueue = {}
+local SafeSortedMap = {}
+local SafeMemoryQueue = {}
 local SafeMemoryStore = {}
 SafeSortedMap.__index = SafeSortedMap
 SafeMemoryQueue.__index = SafeMemoryQueue
@@ -38,10 +38,10 @@ export type SafeSortedMap = typeof(setmetatable({} :: {
 	@class SafeMemoryQueue
 ]=]
 function SafeMemoryQueue.new(name: string, maxRetries: number?, invisibilityTimeout: number?): SafeMemoryQueue
-	local self: SafeMemoryQueue = setmetatable({}, SafeMemoryQueue)
-
-	self._queue = MemoryStoreService:GetQueue(name, invisibilityTimeout)
-	self.maxRetries = maxRetries or 3
+	local self: SafeMemoryQueue = setmetatable({
+		_queue = MemoryStoreService:GetQueue(name, invisibilityTimeout),
+		maxRetries = maxRetries or 3,
+	}, SafeMemoryQueue)
 
 	return self
 end

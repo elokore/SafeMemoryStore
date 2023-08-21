@@ -1,6 +1,6 @@
 {
   "name": "safe-memory-store",
   "tree": {
-      "$path": "src"
+    "$path": "src"
   }
 }
