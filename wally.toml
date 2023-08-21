@@ -1,6 +1,6 @@
 [package]
 name = "westmkk1/safe-memory-store"
-version = "0.1.21"
+version = "0.1.22"
 registry = "https://github.com/dunngames/wally-index"
 realm = "shared"
 
